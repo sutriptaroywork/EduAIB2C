@@ -1,0 +1,322 @@
+
+.bs-footer{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    border-radius: 15px 15px 0px 0px;
+    background: $clr-light-green;
+
+    .footer-heading{
+        // color: $clr-theme-secondery;
+        font-family: $fnt-Inter;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 70px;
+       
+        margin-left: auto;
+        margin-right: auto;
+
+        &.clr-theme{
+            color: $clr-theme;
+        }
+        // &.max-w-870{
+        //     max-width: 870px;
+        // }
+    }
+    .contact-mail{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+        // flex-direction: column;
+        .email-field{
+            position: relative;
+            .error-msg{
+                position: absolute;
+                top: -25px;
+                left: 9px;
+                width: 100%;
+                color: red;
+            }
+        }
+            input{
+                // padding: 9px 14px;
+                height: 41px;
+                padding: 9px;
+                padding-left: 12px;
+                border-top-left-radius: 22px;
+                border-bottom-left-radius: 22px;
+                min-width: 260px;
+                max-width: 260px;
+                border: none;
+                font-size: 14px;
+                // display: inline-block;
+                &:focus-visible{
+                    box-shadow: none;
+                    outline: 0;
+                }
+
+                &::placeholder{
+                    color: #808080;
+                }
+            }
+            .btn-bg{
+                background-color: $clr-white;
+                padding: 4px 4px;
+                height: 41px;
+                border-top-right-radius: 22px;
+                border-bottom-right-radius: 22px;
+                
+                .btn-contact{
+                    padding: 7px 14px;
+                    background-color: $clr-theme;
+                    color: $clr-white;
+                    min-width: 100px;
+                    border-radius: 20px;
+                    transition: all 0.3s;
+                    transform: scale(1);
+
+                    &:hover{
+                        // background-color: $clr-white;
+                        // color: $clr-theme;
+                       
+                        // border: 1px solid $clr-theme;
+                        transform: scale(0.9);
+                        transition: all 0.3s;
+                    }
+
+                    &.active{
+                        background-color: $clr-theme;
+                        color: $clr-white;
+                    }
+                }
+            }
+    }
+    .bottom-content{
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #D9D9D9;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        margin-top: 30px;
+        .footer-logo{
+            min-width: 230px;
+            img{
+
+            }
+        }
+        .navbar-tabs{
+
+        }
+        .media-icons{
+            min-width: 240px;
+            display: flex;
+            justify-content: space-between;
+
+            img{
+                min-width: 100%;
+            }
+            a{
+
+                .img-width{
+                    max-width: 40px;
+                    height: 40px;
+                    transition: all 0.3s;
+
+                    img{
+                        max-width: 40px;
+                        height: 40px;
+                    }
+
+                    &:hover{
+                        transform: scale(0.9);
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    .tearms-text{
+        text-decoration: none;
+        display: block;
+        color: $clr-black;
+        font-family: $fnt-Inter;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 110%;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+
+        &.typ-text{
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &.rightbr{
+            position: relative;
+            &::after{
+
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 0;
+                height: 100%;
+                // width:;
+                border-right: 2px solid grey;
+            }
+        }
+    }
+    .copy-right-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        .privacy_policy{
+            display: flex;
+            position: relative;
+          
+            
+            
+        }
+        .text-copyright{
+                font-size: 12px;
+                margin-bottom: 0;
+
+                
+
+        }
+    }
+}
+@media (max-width: $desktop-breakpoint) {
+    .bs-footer{
+        padding-top: 40px;
+        padding-bottom: 30px;
+    
+        .footer-heading{
+            font-size: 32px;
+            margin-bottom: 30px;
+            // max-width: 500px;
+        }
+        .contact-mail{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            // margin-bottom: 60px;
+                input{
+                    padding: 6px 10px;
+                    min-width: 210px;
+                }
+                .btn-bg{
+                    padding: 3px 3px;
+                    display: flex;
+                    .btn-contact{
+                        padding: 6px 10px;
+                        min-width: 70px;
+                        font-size: 16px;
+                    }
+                }
+        }
+    
+        .bottom-content{
+            .footer-logo{
+                min-width: 170px;
+                img{
+    
+                }
+            }
+            .navbar-tabs{
+    
+            }
+            .media-icons{
+                min-width: 200px;
+                a{
+                    .img-width{
+                        max-width: 30px;
+                        // height: 20px;
+                    }
+                }
+            }
+        }
+        .tearms-text{
+            font-size: 12px;
+           
+        }
+    }
+}
+@media (max-width: $sml-mobile-breakpoint) {
+    .bs-footer{
+        
+        padding-top: 70px;
+        padding-bottom: 40px;
+    
+        .footer-heading{
+            font-size: 24px;
+            // max-width: 2100px;
+        }
+    
+        .contact-mail{
+            // margin-bottom: 50px;
+                input{
+                    padding: 0px 10px;
+                    min-width: 170px;
+                    font-size: 10px;
+                    max-height: 28px;
+                }
+                .btn-bg{
+                    max-height: 28px;
+                    .btn-contact{
+                       padding: 4px 10px;
+                        min-width: 70px;
+                        font-size: 10px;
+                        
+                    }
+                }
+        }
+    
+        .bottom-content{
+           margin-bottom: 20px;
+           
+            .footer-logo{
+                min-width: auto;
+                max-width: 130px;
+                
+            }
+            .navbar-tabs{
+    
+            }
+            .media-icons{
+                min-width: 130px;
+                a{
+                    .img-width{
+                        max-width: 30px;
+                        margin-right: 5px;
+                        // height: 20px;
+                    }
+                }
+            }
+        }
+        .tearms-text{
+            font-size: 10px;
+
+            &.typ-text{
+                font-size: 10px;
+            }
+        }
+        .copy-right-area{
+          flex-direction: column;
+            .privacy_policy{
+                margin-top: 20px;
+            }
+            .text-copyright{
+                    font-size: 10px;
+    
+            }
+        }
+    }
+}
+
+
+

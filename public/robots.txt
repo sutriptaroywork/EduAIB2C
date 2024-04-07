@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /account/
+Disallow: /search/
+Disallow: /reset-password/
+Disallow: /forgot-password/
+Disallow: /unsubscribe/
+
+Sitemap: https://shikshaml.com/sitemap.xml

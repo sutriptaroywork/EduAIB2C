@@ -1,0 +1,56 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&family=Tiro+Devanagari+Hindi&display=swap');
+
+
+$clr-black:#000000;
+$clr-white:#ffffff;
+// $clr-theme: #9362F3;
+$clr-theme: #ffcc02;
+// $clr-dark-theme : #7D1AFF;
+$clr-dark-theme : #ffcc02;
+// $clr-theme-secondery : #9747FF;
+$clr-theme-secondery : #ffcc02;
+$clr-light-purple : #DBD9FF;
+$clr-grey : #808080;
+$clr-theme-grey : #979797;
+$clr-light-theme : #EEE9FE;
+$clr-secondary : #D9D9D9;
+$clr-light-green : #C2F362;
+$clr-orange-theme : #FF6200;
+$clr-blue:#111B73;
+/* font weight */
+$font-Extralight:200;
+$font-regular:400;
+$font-medium:500;
+$font-semibold:600;
+$font-bold:700;
+
+
+/* Import Poppins Font - Regular */
+// @font-face {
+//   font-family: 'Poppin1';
+//   src: url('/styles/fonts/Poppins-Regular.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+
+/* Define Font Usage */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+$fnt-roboto :'Roboto', sans-serif;
+$fnt-Inter: 'Inter', sans-serif;
+$fnt-tiro: 'Tiro Devanagari Hindi', serif;
+$fnt-popins : 'Poppins', sans-serif;
+
+// $fnt-popin1 : 'Poppin1', sans-serif;
+
+
+// $fnt-popins-bold : 'poppinsbold', sans-serif;
+
+/* breakpoints */
+$sml-mobile-breakpoint: 767.49px;
+$mobile-breakpoint: 768px;
+$tablet-breakpoint:992px;
+$desktop-breakpoint:1024px;

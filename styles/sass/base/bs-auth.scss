@@ -1,0 +1,143 @@
+.bs-auth{
+    padding-top: 35px;
+    min-width: 370px;
+
+    .sepration-part{
+        margin-bottom: 16px;
+        .line{
+            color: $clr-secondary;
+        }
+        .line-text{
+            color: $clr-secondary;
+            font-family: $fnt-popins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 110%;
+            text-transform: lowercase;
+            padding: 20px 0px;
+            background-color: $clr-white;
+            margin-top: -45px;
+            margin-bottom: 0;
+            text-align: center;
+            max-width: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+            
+        }
+    }
+
+    .google-btn{
+        // max-width: 300px;
+        min-height: 36px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $clr-secondary;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 22px;
+        text-decoration: none;
+
+        img{
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+        .btn-text{
+            color: $clr-black;
+            font-family: $fnt-popins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 110%;
+           
+        }
+
+        &:active{
+            transform: scale(0.98);
+            /* Scaling button to 0.98 to its original size */
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+        }
+
+    }
+
+    .sign-up-btn{
+        text-decoration: none;
+        color: $clr-grey;
+        font-family: $fnt-popins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 110%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s;
+        .typ-theme{
+            color: $clr-theme;
+        }
+        &:hover{
+            transform: scale(1.01);
+            transition: all 0.3s;
+        }
+        
+    }
+}
+
+
+@media (max-width: $desktop-breakpoint) {
+   
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .bs-auth{
+        padding-top: 28px;
+        min-width: 230px;
+    
+        .sepration-part{
+            margin-bottom: 10px;
+            .line{
+                color: $clr-secondary;
+            }
+            .line-text{
+               
+                font-size: 12px;
+                padding: 20px 0px;
+                margin-top: -45px;
+                max-width: 60px;
+              
+                
+            }
+        }
+    
+        .google-btn{
+            // max-width: 300px;
+            min-height: 32px;
+            border-radius: 4px;
+            margin-bottom: 18px;
+            text-decoration: none;
+    
+            img{
+                width: 16px;
+                height: 16px;
+                margin-right: 12px;
+            }
+            .btn-text{
+                font-size: 12px;
+            }
+        }
+    
+        .sign-up-btn{
+            font-size: 12px;
+        }
+    }
+}
+
+// @media (max-width: $sml-mobile-breakpoint) {
+//     .bs-auth{
+//         padding-top: 20px;
+//         max-width: 100%;
+    
+       
+//     }
+// }

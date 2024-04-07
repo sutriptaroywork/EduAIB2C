@@ -1,0 +1,139 @@
+/* config */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+
+@import "./config/variables";
+// @import "./config/mixin";
+
+/* fonts */
+// @import "./fonts/fonts";
+// @import "./fonts/icons";
+
+/* base */
+@import "./base/bs-footer";
+@import "./base/bs-header";
+@import "./base/bs-btn";
+@import "./base/bs-card";
+@import "./base/bs-heading";
+@import "./base/bs-para";
+@import "./base/bs-accordion";
+@import "./base/bs-swiper";
+@import "./base/bs-form";
+@import "./base/bs-auth";
+@import "./base/bs-success";
+@import "./base/bs-modal";
+@import "./base/bs-calender";
+@import "./base/bs-sidebar";
+@import "./base/bs-header-dash";
+@import "./base/bs-info";
+@import "./base/bs-tabs";
+@import"./base/bs-notification";
+@import"./base/bs-earn";
+@import "./base/bs-video.scss";
+@import"./base/bs-subs.scss";
+@import"./base/carousel.scss";
+
+
+
+
+
+
+//   $fnt-popin1 : 'Poppin1', sans-serif;
+// @import "./base/bs-dropdown";
+
+
+/* layout */
+@import "./layout/lyt-section";
+
+/* module */
+@import "./module/mod-shadow-card";
+@import "./module/mod-txt-date";
+@import "./module/mod-note";
+@import "./module/mod-date-picker";
+@import "./module/mod-list";
+@import "./module/mod-progress";
+@import "./module/mod-tooltip";
+@import "./module/mod-weekgraph";
+
+
+/* plugins */
+@import "./plugins/magnifc-popup.scss";
+@import "./plugins/swiper.scss";
+
+body {
+    // font-family: $fnt;
+    background-color: #FFF;
+    overflow-x: hidden;
+}
+.img-fluid{
+    width: 100%;
+}
+
+.clr-theme{
+    color: $clr-theme;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
+    width: 0em; /* Width of the vertical scrollbar */
+  }
+  
+// ::-webkit-scrollbar-thumb {
+//   background-color: transparent; /* Color of the scrollbar thumb */
+// }
+
+/* Apply your styles here */
+
+
+
+
+
+
+
+
+
+  
+.shadowEffect{
+  border-radius: 50%;
+  background: #FFF;
+filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+}

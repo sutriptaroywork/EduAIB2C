@@ -1,0 +1,26 @@
+.mod-tooltip{
+    position: absolute;
+    color: #ffcc02;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: #efe8fd;
+    max-height: 40px;
+    max-width: 200px;
+    z-index: 1;
+    text-decoration: none;
+    font-size: 10px;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    text-align: center;
+    // transition: all 0.8s;
+}
+
+@media (max-width: 1365.5px) {
+    .mod-tooltip{
+        padding: 10px 15px;
+        font-size: 8px;
+        // transition: all 0.8s;
+    }
+}

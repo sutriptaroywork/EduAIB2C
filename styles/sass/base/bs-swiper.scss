@@ -1,0 +1,211 @@
+.bs-swiper {
+    &.typ-plan-swiper {
+        &.swiper {
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 5px;
+            // .swiper-button-prev {
+
+            //     position: absolute;
+            //     left: 0px;
+            //     top: 50%;
+            //     background: none;
+            //     border: none;
+            //     padding: 0;
+            //     z-index: 10;
+            //     width: 40px;
+            //     justify-content: flex-end;
+                
+
+            //     &::after {
+            //         content: ""; // Remove default content
+            //         background-image: url(../images/landing-page/left-arrow.png); // Replace with your arrow image URL
+            //         width: 45px;
+            //         height: 45px;
+            //         background-size: 45px;
+            //         background-repeat: no-repeat;
+            //         opacity: 0.8;
+            //         margin-left: 40px;
+            //         position: absolute;
+            //     }
+            // }
+            // .swiper-button-next {
+
+            //     position: absolute;
+            //     right: 0px;
+            //     top: 50%;
+            //     //  transform: translateY(-50%);
+            //     background: none; // Remove the default background
+            //     border: none; // Remove any default border
+            //     padding: 0; // Remove any default padding
+            //     z-index: 10; // Adjust the z-index if necessary
+            //     width: 40px;
+
+            //     &::after {
+            //         content: ""; // Remove default content
+            //         background-image: url(../images/landing-page/right-arrow.png); // Replace with your arrow image URL
+            //         width: 45px;
+            //         height: 45px;
+            //         background-size: 45px;
+            //         background-repeat: no-repeat;
+            //         opacity: 0.8;
+            //     }
+            // }
+        }
+
+        
+    }
+
+    &.typ-testimonial-swiper {
+        &.swiper {
+            // padding-top: 130px;
+            padding: 130px 30px 60px 30px;
+            position: relative;
+
+            .swiper-wrapper {
+
+                position: relative;
+            }
+
+            .swiper-button-prev {
+
+                position: absolute;
+                left: 0px;
+                top: 60%;
+                transform: translateY(-50%);
+                background: none; // Remove the default background
+                border: none; // Remove any default border
+                padding: 0; // Remove any default padding
+                z-index: 10; // Adjust the z-index if necessary
+                width: 40px;
+
+                &::after {
+                    content: ""; // Remove default content
+                    background-image: url(../images/landing-page/left-arrow.png); // Replace with your arrow image URL
+                    width: 40px;
+                    height: 40px;
+                    background-size: 40px;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .swiper-button-next {
+
+                position: absolute;
+                right: 0px;
+                top: 60%;
+                transform: translateY(-50%);
+                background: none; // Remove the default background
+                border: none; // Remove any default border
+                padding: 0; // Remove any default padding
+                z-index: 10; // Adjust the z-index if necessary
+                width: 40px;
+
+                &::after {
+                    content: ""; // Remove default content
+                    background-image: url(../images/landing-page/right-arrow.png); // Replace with your arrow image URL
+                    width: 40px;
+                    height: 40px;
+                    background-size: 40px;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .swiper-pagination-bullet {
+
+                &.swiper-pagination-bullet-active {
+                    background: $clr-theme;
+                }
+            }
+        }
+    }
+
+    &.typ-advanced-swiper{
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+
+        .swiper-slide-shadow-left{
+            opacity: 0 !important;
+            &.swiper-slide-shadow-coverflow{
+                opacity: 0 !important;
+            }
+        } 
+
+        .swiper-slide-shadow-right{
+            opacity: 0 !important;
+            &.swiper-slide-shadow-coverflow{
+                opacity: 0 !important;
+            }
+        } 
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .bs-swiper {
+        &.typ-plan-swiper {
+            &.swiper {
+                padding-top: 50px;
+                padding-left: 10px; padding-right: 10px;
+            }
+            
+        }
+
+    }
+}
+
+@media (max-width: $tablet-breakpoint) {
+    .bs-swiper {
+        &.typ-advanced-swiper{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+    
+        }
+    }
+
+}
+
+@media (max-width: 991.48px) {
+    .bs-swiper{
+        &.typ-plan-swiper {
+            &.swiper {
+                padding-top: 50px;
+                padding-left: 10px;
+    
+                
+            }
+        }
+    }
+}
+
+@media (max-width: $sml-mobile-breakpoint) {
+    .bs-swiper {
+        &.typ-choose-plan {
+            &.swiper {
+                padding-top: 10px;
+            }
+        }
+
+        &.typ-testimonial-swiper {
+            &.swiper {
+                padding: 0px 0px 40px 0px;
+
+                .swiper-pagination-bullet {
+                    width: 6px;
+                    height: 6px;
+                }
+            }
+        }
+
+        
+    &.typ-advanced-swiper{
+        // padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    }
+}

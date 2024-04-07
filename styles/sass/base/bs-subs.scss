@@ -1,0 +1,16 @@
+.bs-subs {
+  height: auto;
+  width: auto;
+  border-radius: 16px;
+  border: 2px solid #c2c2c2;
+  background: $clr-white;
+  padding: 50px 25px 50px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  .card-status{
+    color: #88C70D;
+  }
+  .card-detail{
+    color: #979797;
+  }
+}

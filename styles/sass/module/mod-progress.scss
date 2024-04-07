@@ -1,0 +1,37 @@
+.mod-progress {
+    .start-like-clock {
+        transform: rotate(-90deg);
+    }
+    .circular-progress-graph {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .progress-background {
+        fill: none;
+        stroke: rgba(255, 98, 0, 0.75);
+        stroke-width: 20;
+    }
+    .progress-fill {
+        fill: none;
+        stroke: #ffcc02;
+        stroke-width: 20;
+        transition: stroke-dashoffset 1s ease;
+        border-radius: 15px;
+        box-shadow: 4px 4px 20px 0px rgba(238, 238, 238, 0.50);
+    }
+    .progress-text {
+        fill: #ffcc02;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 110%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffcc02;
+    }
+}

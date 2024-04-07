@@ -1,0 +1,199 @@
+.bs-earn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+  background: $clr-white;
+  height: 100%;
+
+  #pentagon {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffcc02;
+    .refer-banner {
+      width: 400px;
+      top: 40px;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      position: absolute;
+      .refer-title {
+        width: 400px;
+        font-size: 28px;
+        color: $clr-white;
+        .refer-img {
+          position: absolute;
+          width: 400px;
+          top: 60px;
+          left: 40%;
+          transform: translate(-50%, 0%);
+        }
+      }
+    }
+  }
+  .earn-hero {
+    padding: 40px;
+    .earn-title {
+      font-size: 28px;
+      font-weight: 500;
+      margin-top: 50px;
+    }
+    .earn-sub-title {
+      .earn-list {
+        list-style: disc !important;
+        .earn-item {
+          font-size: 18px;
+          font-weight: 400;
+          color: #666;
+          margin-top: 20px;
+          .theme {
+            color: $clr-theme;
+          }
+        }
+      }
+    }
+  }
+  .gift-img {
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #openPopupButton {
+    background-color: $clr-theme;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+  .popup-container {
+    position: relative;
+    // display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    .popup {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+  .blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
+    z-index: 100;
+  }
+  .line {
+    width: 95%;
+    border: 1px solid #c2c2c2;
+  }
+  .link-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .link-content {
+      padding: 40px;
+      .link-title {
+        font-size: 30px;
+      }
+      .link-sub-title {
+        color: #666;
+      }
+      .client-id {
+        margin-top: 30px;
+        .client-title {
+          font-size: 16px;
+        }
+        .client-field {
+          .field-box {
+            #field {
+              padding: 10px 16px;
+              width: 130px;
+              border: 2px solid #d1d1d1;
+              border-radius: 15px;
+            }
+            .client-button {
+              background-color: $clr-theme;
+              padding: 12px;
+              margin-left: 12px;
+              border-radius: 15px;
+              color: $clr-white;
+            }
+          }
+        }
+      }
+      .social-title {
+        padding-left: 30px;
+      }
+      .media-icons {
+        min-width: 240px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 22px;
+
+        img {
+          min-width: 100%;
+        }
+        a {
+          .img-width {
+            max-width: 50px;
+            height: 50px;
+            transition: all 0.3s;
+
+            img {
+              max-width: 50px;
+              height: 50px;
+            }
+
+            &:hover {
+              transform: scale(0.9);
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.popup-card {
+  position: relative;
+  // display: none;
+  // position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 101;
+  .popup {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

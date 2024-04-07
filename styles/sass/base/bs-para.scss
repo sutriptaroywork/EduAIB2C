@@ -1,0 +1,48 @@
+.bs-para{
+    color: $clr-grey;
+    font-family: $fnt-popins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 160% */
+    margin-bottom: 20px;
+
+
+    &.typ-banner-para{
+        margin-bottom: 60px;
+        max-width: 530px;
+    }
+    &.typ-green{
+        color: $clr-light-green;
+    }
+}
+@media (max-width: 1200px) {
+    .bs-para{
+        &.typ-banner-para{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .bs-para{
+        font-size: 16px;
+        margin-bottom: 20px;
+        line-height: 140%;
+        &.typ-banner-para{
+            margin-bottom: 20px;
+        }
+    }
+
+}
+
+@media (max-width: $sml-mobile-breakpoint) {
+    .bs-para{
+        font-size: 14px;
+        margin-bottom: 16px;
+       
+        &.typ-banner-para{
+            margin-bottom: 16px;
+        }
+    }
+}

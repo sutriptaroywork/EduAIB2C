@@ -1,0 +1,136 @@
+.bs-info {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    .section {
+        margin-left: 12px;
+        p {
+            color: $clr-black;
+            font-family: $fnt-popins;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 144%;
+            letter-spacing: 0.3px;
+        }
+    }
+    .dark{
+        font-weight: 500;
+    }
+
+    .title {
+        color: $clr-black;
+        font-family: $fnt-popins;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0.3px;
+        text-align: center;
+        text-decoration-line: underline;
+        margin-bottom: 50px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        color: $clr-black;
+        font-family: $fnt-popins;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 145%;
+        letter-spacing: 0.3px;
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 16px;
+        color: $clr-black;
+        font-family: $fnt-popins;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 145%;
+        letter-spacing: 0.3px;
+        .bold-txt {
+            font-weight: 500;
+        }
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 0;
+    }
+
+    .subtitle-list {
+        padding-left: 50px;
+    }
+
+    li {
+        margin-bottom: 10px;
+        color: $clr-black;
+        font-family: $fnt-popins;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 144%;
+        /* 144.444% */
+        letter-spacing: 0.3px;
+        margin-bottom: 26px;
+
+        &::marker {
+            font-size: 14px;
+        }
+
+        &.list_style_none{
+            list-style: none;
+        }
+    }
+
+    .link {
+        color: #2F9BEA;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: $sml-mobile-breakpoint) {
+    .bs-info {
+        padding-top: 30px;
+        padding-bottom: 60px;
+
+        .logo {
+            width: 150px;
+            margin-bottom: 30px;
+        }
+
+        .section {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .title {
+
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 14px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+
+        .subtitle-list {
+            padding-left: 22px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 16px;
+
+            &::marker {
+                font-size: 12px;
+            }
+        }
+
+    }
+}

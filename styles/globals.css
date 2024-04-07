@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+   font-family: -apple-system,Poppins, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+/* Setting a default size for all images */
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* 
+@font-face {
+  font-family: 'Poppins';
+  src: url('/styles/fonts/poppins-regular.woff2') format('woff2'),
+       url('/styles/fonts/poppins-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+input{
+  background: #fff;
+}
+
+input[type="checkbox"] {
+  /* Your styles here */
+  background-color: white !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* custom scrollbar css */
+.scrollbarClass{
+  scrollbar-width: auto;
+  scrollbar-color: #dfe9eb;
+  overflow:scroll;
+}
+.scrollbarClass::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+.scrollbarClass::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.scrollbarClass::-webkit-scrollbar-track:hover {
+  background-color: #D9D9D9;;
+}
+
+.scrollbarClass::-webkit-scrollbar-track:active {
+  background-color: #D9D9D9;;
+}
+
+.scrollbarClass::-webkit-scrollbar-thumb {
+  border-radius: 24px;
+  background-color: #979797;
+}
+
+.scrollbarClass::-webkit-scrollbar-thumb:hover {
+  background-color: #979797;
+}
+
+.scrollbarClass::-webkit-scrollbar-thumb:active {
+  background-color: #979797;
+}
+
+
+.fEBzPS {
+  border: 1px solid #b9b9b9 !important;
+  border-radius: 10px !important;
+}
+
+.back{
+  /* background-color: linear-gradient(135deg, rgba(147, 98, 243, 1), rgba(224, 211, 250, 25)); */
+  background-color: linear-gradient(135deg, rgba(255, 204, 2, 1), rgba(249, 235, 178, 25));
+}
+.rs-dropdown-toggle{
+  /* border: 1px solid #9326F3 !important; */
+  border: 1px solid #ffcc02 !important;
+}
+.slick-prev:before{
+  /* color: #9326F3 !important; */
+  color: #ffcc02 !important;
+}
+
+.slick-next:before{
+  /* color: #9326F3 !important; */
+  color: #ffcc02 !important;
+}

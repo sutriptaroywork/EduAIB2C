@@ -1,0 +1,126 @@
+.mod-date-picker {
+    &.week-date-picker {
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            button {
+                padding: 10px;
+                // width: 30px;
+                font-size: 20px;
+            }
+
+            .month-year {
+                color: $clr-black;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 32px;
+                /* 160% */
+                margin-bottom: 0;
+                text-align: center;
+                min-width: 180px;
+            }
+        }
+        .week-table {
+            width: 100%;
+            .th,
+            td {
+                color: $clr-black;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 140%;
+                letter-spacing: 0.45px;
+                // min-width: 14%;
+                text-align: center;
+            }
+            th {
+                &.active {
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: -5px;
+                        left: 50%;
+                        transform: translate(-50%, 0%);
+                        width: 37px;
+                        height: 40px;
+                        /* Added height for background */
+                        //   border-radius: 50%;
+                        background-color: $clr-theme;
+                        z-index: -1;
+                        /* Set z-index to make the background appear below text */
+                        border-top-left-radius: 50%;
+                        border-top-right-radius: 50%;
+                    }
+
+                    /* Add text styles to ensure it's on top of the background */
+                    color: white;
+                    z-index: 1;
+                    span{
+                        background-color: transparent;
+                    }
+                    /* Set z-index higher to keep text above the background */
+                }
+            }
+
+            td {
+                &.active {
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: -5px;
+                        left: 50%;
+                        transform: translate(-50%, 0%);
+                        width: 37px;
+                        height: 40px;
+                        border-bottom-left-radius: 50%;
+                        border-bottom-right-radius: 50%;
+                        background-color: $clr-theme;
+                        z-index: -1;
+                        /* Set z-index to make the background appear below text */
+                    }
+
+                    /* Add text styles to ensure it's on top of the background */
+                    color: white;
+                    z-index: 1;
+                    span{
+                        background-color: transparent;
+                    }
+                    /* Set z-index higher to keep text above the background */
+                }
+            }
+
+            .th-width {
+                text-align: center;
+                min-width: 55px;
+                max-width: 55px;
+
+                span {
+                    width: 40px;
+                    display: block;
+                    margin: auto;
+                    // background: rgba(250, 250, 250, 0.50);
+                    line-height: 200%;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1365.5px) {
+    .mod-date-picker {
+        &.week-date-picker {
+            .week-table {
+                .th-width {
+                    min-width: 35px;
+                }
+            }
+        }
+    }
+}
