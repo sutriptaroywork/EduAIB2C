@@ -170,7 +170,7 @@ const Login = () => {
                       />
                     </div>
 
-                    <div className="flex-content mt-2">
+                    {/* <div className="flex-content mt-2">
                       <Link href="/otp" className="redirect-link typ-theme">
                         Login with OTP?
                       </Link>
@@ -180,7 +180,7 @@ const Login = () => {
                       >
                         Forgot Password?
                       </Link>
-                    </div>
+                    </div> */}
                     <button type="submit" disabled={loading} className="btn-submit">
                       {!loading ? (
                         "Submit"
@@ -195,10 +195,10 @@ const Login = () => {
                   </Form>
                 </Formik>
                 <div className="bs-auth">
-                  <div className="sepration-part">
+                  {/* <div className="sepration-part">
                     <hr className="line" />
                     <p className="line-text">or</p>
-                  </div>
+                  </div> */}
                   {/* <div className="google-btn cursor-pointer" onClick={handleGoogleSigin}>
                     <Image src={google} alt="google" />
                     <span className="btn-text">Sign in with Google</span>
@@ -206,10 +206,10 @@ const Login = () => {
                  {/* <div className="flex justify-center items-center mt-0 mb-4 " >
                   <Image src={googleButton} alt="Sign in with google" quality={100} width={200} className="cursor-pointer" onClick={handleGoogleSigin} />
                  </div> */}
-                 <Link href="/signup" className=" sign-up-btn">
+                 {/* <Link href="/signup" className=" sign-up-btn">
                   Don’t have an Account |{" "}
                   <span className="typ-theme">Sign up</span>
-                 </Link>
+                 </Link> */}
                 </div>
               </div>
             </div>
