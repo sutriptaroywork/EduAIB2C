@@ -153,7 +153,7 @@ const SummaryComponent = () => {
           {/* shiksha ai chat box */}
           {userToken ==  0 && typeof userToken =="number" ? 
           <div className="col-lg-4 min-h-[85vh] border-1 bg-[#EFE8FD80] border-[#F8F9FA] shadow-md rounded-2xl p-2">
-            <span className="text-left text-2xl font-medium">shiksha AI</span>
+            {/* <span className="text-left text-2xl font-medium">shiksha AI</span>
             <p className="text-center text-2xl font-medium text-[#FF6200] mt-6">
               Insufficient Coins
             </p>
@@ -163,7 +163,7 @@ const SummaryComponent = () => {
             <div className="flex flex-col justify-center  items-center">
               <Image src={tokenGif} height={900} width={300} alt="token-gif" />
               <button className="text-center bg-[#FF6200] text-white w-[100px] h-[45px] rounded-md" onClick={()=>router.push("/token-manager")} >Top up</button>
-            </div>
+            </div> */}
            
           </div>:<div className="col-lg-4 min-h-[85vh] border-1  border-[#F8F9FA] shadow-md rounded-2xl text-center flex flex-col justify-between p-2">
             <SummaryChatBoxComp
