@@ -1,24 +1,24 @@
 /** @type {import('next').NextConfig} */
 
 const isProd = process.env.NODE_ENV === 'production';
-// const nextConfig = {
-//   reactStrictMode: false,
-//   images: {
-//     domains: ['http://164.52.202.60/',"164.52.202.60","164.52.202.52","https://shikshaml.com","shikshaml.com","http://shikshaml.in","shikshaml.in","shikshaml-b2c-backend.vercel.app","https://shikshaml-b2c-backend.vercel.app","shikshaml-b2b.s3.amazonaws.com",'shikshaml-b2c.s3.amazonaws.com'],
-//   },
-  
-//   // for react-pdf
-//   webpack: (config) => {
-//     config.resolve.alias.canvas = false;
-//     // You may not need this, it's just to support moduleResolution: 'node16'
-//     config.resolve.extensionAlias = {
-//       '.js': ['.js', '.ts', '.tsx'],
-//     };
-//     return config;
-//   },
-// }
-
 const nextConfig = {
+   reactStrictMode: false,
+   images: {
+     domains: ['http://164.52.202.60/',"164.52.202.60","164.52.202.52","https://shikshaml.com","shikshaml.com","http://shikshaml.in","shikshaml.in","shikshaml-b2c-backend.vercel.app","https://shikshaml-b2c-backend.vercel.app","shikshaml-b2b.s3.amazonaws.com",'shikshaml-b2c.s3.amazonaws.com'],
+   },
+  
+   // for react-pdf
+   webpack: (config) => {
+     config.resolve.alias.canvas = false;
+     // You may not need this, it's just to support moduleResolution: 'node16'
+     config.resolve.extensionAlias = {
+       '.js': ['.js', '.ts', '.tsx'],
+     };
+     return config;
+   },
+ }
+
+/*const nextConfig = {
   async headers() {
     return [
         {
@@ -33,6 +33,6 @@ const nextConfig = {
         }
     ]
   }
-}
+}*/
 
 module.exports = nextConfig

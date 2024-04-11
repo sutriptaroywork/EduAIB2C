@@ -4,6 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3011",
+    "dev:pm2": "pm2 start npm --name EduAi_FE -- run dev",
+    "pm2:status": "pm2 ls",
+    "pm2:log": "pm2 log",
+    "pm2:stop": "pm2 stop",
+    "pm2:remove": "pm2 delete",
+    "pm2:restart": "pm2 restart",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
