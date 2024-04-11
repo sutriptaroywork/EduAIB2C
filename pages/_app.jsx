@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
     <Provider store={store}>
       <>
         <Head>
-          <title>Edu.AI</title>
+          <title>Sapientia</title>
           <meta name="description" content="Discover a smarter, more enjoyable way to learn with Edu.AI. Our automated, human-like personal tutor is revolutionizing the way students engage with educational content. Join the next era of learning today." />
           <meta name="keywords" content="Edu.AI, learning, education, personal tutor, automated tutor, smart learning" />
           <link rel="icon" href="/edudotai-favicon.png" />
